@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherdata</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+    <div class="maincontainer">
+        <div class="heading">
+            <h2>Weather data</h2>
+        </div>
+
+        <div class="container1">
+       
+            <div class="searchbox">
+            
+                <!-- <label for="">Search</label> -->
+                <h3>Enter a city name</h3>
+                <input type="text" id="searcharea"><br>
+                <button id="submit">Search</button><br>
+                <button id="reloadbtn">reload</button><br><br>
+                <span id="error">Enter a city name</span>
+            </div>
+    
+                <div class="weatherbox">
+                    
+                    <div class="section1"> 
+                        <img src="http://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" id="conditionimg">
+                        <h1 id="place" style="text-transform: uppercase;"></h1>
+                        <h4 id="region" style="text-transform: uppercase;"></h4>
+                        <h3 id="country" style="text-transform: uppercase;"></h3>
+                    </div>
+                    <div class="section2">
+                        <h4>temperature</h4>
+                        <span id="temperature">°C</span>
+                   
+                        <h4>Humidity</h4>
+                        <span id="humidity">0 %</span>
+                    
+                        <h4>condition</h4>
+                        <span id="condition">----</span>
+                    
+                        <h4>Windspeed</h4>
+                        <span id="windspeed">0 Km/h</span>
+                    </div>
+                </div>
+            
+        </div>
+    
+     
+        <div class="containerchartbar">
+            <div>
+                <h2>maxtempC-date</h2>
+                <canvas id="barchart1">hgyug</canvas>
+            </div>
+            <div>
+                <h2>maxtempF-date</h2>
+                <canvas id="barchart2"></canvas>
+            </div>
+        </div>
+        <div class="containerchartrest">
+            <div>
+                <h2>windspeed-date</h2>
+                <canvas id="linechart"></canvas>
+            </div>
+            <div>
+                <h2>Humidity-date</h2>
+                <canvas id="piechart"></canvas>
+            </div>
+        </div>
+
+
+        <div class="filtermain">
+            <div>
+                <h5>Custom Temperature Filtering</h5>
+                <br>
+                <input type="number" id="filterdata">
+                <button id="filter">Filter</button>
+            </div>
+            <div>
+                <p id="result"></p>
+               
+            </div>
+        </div>
+    
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="Index.js"></script>
+</body>
+</html>

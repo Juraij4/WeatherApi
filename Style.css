@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-transform: uppercase;
+}
+
+
+ 
+ .maincontainer .heading{
+    background-color: rgb(68, 119, 185);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+ }
+
+.maincontainer .container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10em;
+    height: auto;
+    gap: 20px;
+
+
+}
+
+.searchbox{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 80px 0;
+    border-radius: 10px;
+   
+}
+
+.searchbox h3{
+    margin-bottom: 10px;
+}
+
+.searchbox input{
+    width: 50%;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+
+.searchbox input text{
+    font-size: 15px;
+}
+
+.searchbox button{
+    width: 50%;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgb(219, 226, 233);
+    cursor: pointer;
+    border: 1px solid gray;
+
+}
+
+.searchbox button:hover{
+    background-color: rgb(170, 174, 178);
+}
+
+.searchbox #error{
+    color: red;
+    display: none;
+}
+
+
+.weatherbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.weatherbox h4{
+    margin-top: 10px;
+}
+
+.weatherbox .section1{
+    flex: 1;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 80px 0;
+    border-radius: 10px;
+}
+
+.weatherbox .section2{
+    flex: 1;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 80px 0;
+    border-radius: 10px;
+}
+
+.weatherbox .section2 span{
+padding-bottom: 30px;
+
+
+}
+
+
+
+
+
+
+.containerchartbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    gap: 30px;
+    
+}
+
+.containerchartbar div{
+    flex: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.containerchartrest{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;   
+    gap: 60px;
+
+   
+}
+
+.containerchartrest div{
+    flex: 1;
+    width: 100%;
+    text-align: center; 
+    
+}
+
+
+.filtermain{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    font-size: 20px;
+}
+
+.filtermain div{
+    flex: 1;
+    text-align: center;
+  
+}
+
+
+.filtermain input{
+    width: 30%;
+    padding: 5px;   
+    font-size: 20px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.filtermain button{
+    font-size: 20px;
+    padding: 5px;
+    margin-left: -10px;
+    background-color:  rgb(219, 226, 233);
+    border: 1px solid gray;
+    cursor: pointer;
+
+}
+
+.filtermain button:hover{
+    background-color: rgb(137, 143, 148) ;
+}
+
+
+
+@media(max-width:426px){
+
+    .maincontainer .container1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .filtermain{
+        display: block;
+    }
+    .filtermain div{
+        margin-bottom: 30px;
+    }
+
+}
